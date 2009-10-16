@@ -14,4 +14,6 @@ This is a very(!) simple web application to preview the rendered output of a [Ma
 
 For the licences of the 3rd party libraries see the license.txt files in the respective folder under _3rdParty_
 
+A demo of the application can be found at http://markdown.andreloker.de/
+
 ~ Andre Loker <mail@andreloker.de>
