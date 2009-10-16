@@ -126,7 +126,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\main.css" />
-    <Content Include="assets\js\prototype-yui.js" />
     <Content Include="assets\js\prototype.js" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />

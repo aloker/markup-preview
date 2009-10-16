@@ -31,18 +31,18 @@ ${FormHelper.TextArea("source", {@rows:20, @cols: 80, @onchange: 'site.process()
       }
     },
 
-    resizeTextarea: function(t) {
-      if (!t.originalRowCount) {
-        t.originalRowCount = t.rows;
+    // based on http://blog.bigsmoke.us/2007/02/18/automatic-html-textarea-resizing
+    resizeTextarea: function(textArea) {    
+      if (!textArea.originalRowCount) {
+        textArea.originalRowCount = textArea.rows;
       }
-
-      var rows = t.value.split('\n');
+      var rows = textArea.value.split('\n');
       var neededRows = 1;
       for (var i = 0; i < rows.length; i++) {
         var row = rows[i];
-        neededRows += (row.length > t.cols) ? Math.floor(row.length / t.cols) : 1;
+        neededRows += (row.length > textArea.cols) ? Math.floor(row.length / textArea.cols) : 1;
       }
-      t.rows = Math.max(neededRows, t.originalRowCount);
+      textArea.rows = Math.max(neededRows, textArea.originalRowCount);
     }
   });
 

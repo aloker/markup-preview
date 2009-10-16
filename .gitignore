@@ -4,3 +4,4 @@ _ReSharper.*/
 StyleCop.Cache
 *.user
 *.suo
+/Source/MarkdownPreview/MarkdownPreview/MarkdownPreview.Publish.xml
