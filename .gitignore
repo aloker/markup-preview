@@ -1,0 +1,6 @@
+bin/
+obj/
+_ReSharper.*/
+StyleCop.Cache
+*.user
+*.suo

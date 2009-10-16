@@ -1,0 +1,51 @@
+<div id="left" class="container">
+<h2>Markdown</h2>
+<div class="inner">
+${FormHelper.TextArea("source", {@rows:20, @cols: 80, @onchange: 'site.process();', @onkeypress: 'site.resizeTextarea(this);', @onkeyup: 'site.resizeTextarea(this);'})}
+</div>
+</div>
+
+<div id="right" class="container">
+<h2>HTML</h2>
+<div id="destination" class="inner"></div>
+</div>
+
+<script type="text/javascript">  /*<![CDATA[*/
+  var Site = new Class.create({
+
+    previousValue: '',
+
+    initialize: function() {
+      this.previousValue = '';
+      new PeriodicalExecuter(this.process, 2);
+      $('source').focus();
+    },
+
+    process: function() {
+      var val = $('source').value;
+      if (val != this.previousValue) {
+        new Ajax.Request("${UrlHelper.For({@controller:'home', @action:'process'})}", {
+          parameters: { source: val }
+        });
+        this.previousValue = val;
+      }
+    },
+
+    resizeTextarea: function(t) {
+      if (!t.originalRowCount) {
+        t.originalRowCount = t.rows;
+      }
+
+      var rows = t.value.split('\n');
+      var neededRows = 1;
+      for (var i = 0; i < rows.length; i++) {
+        var row = rows[i];
+        neededRows += (row.length > t.cols) ? Math.floor(row.length / t.cols) : 1;
+      }
+      t.rows = Math.max(neededRows, t.originalRowCount);
+    }
+  });
+
+var site = new Site();  
+  
+/*]]>*/</script>

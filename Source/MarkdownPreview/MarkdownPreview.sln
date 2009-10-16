@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkdownPreview", "MarkdownPreview\MarkdownPreview.csproj", "{DAB8DD32-3A0F-4D84-85F7-7AFBCDAC5DDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkdownPreview.Tests", "MarkdownPreview.Tests\MarkdownPreview.Tests.csproj", "{7A2988D2-CAAF-404B-8599-04494F9E6E02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAB8DD32-3A0F-4D84-85F7-7AFBCDAC5DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB8DD32-3A0F-4D84-85F7-7AFBCDAC5DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB8DD32-3A0F-4D84-85F7-7AFBCDAC5DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB8DD32-3A0F-4D84-85F7-7AFBCDAC5DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2988D2-CAAF-404B-8599-04494F9E6E02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2988D2-CAAF-404B-8599-04494F9E6E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2988D2-CAAF-404B-8599-04494F9E6E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2988D2-CAAF-404B-8599-04494F9E6E02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

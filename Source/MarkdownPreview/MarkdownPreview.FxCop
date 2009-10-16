@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="1.36" Name="My FxCop Project">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">c:\program files\microsoft fxcop 1.36\Xml\FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-US" />
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+  <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
+ </ProjectOptions>
+ <Targets>
+  <Target Name="$(ProjectDir)/MarkdownPreview.Tests/bin/Debug/MarkdownPreview.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/MarkdownPreview.Tests/bin/Debug/MarkdownPreview.Tests.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="1.36">
+  <Namespaces>
+   <Namespace Name="MarkdownPreview">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-16 20:22:22Z">
+      <Issue>
+       <Item>MarkdownPreview</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="MarkdownPreview.App">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-16 20:22:22Z">
+      <Issue>
+       <Item>MarkdownPreview.App</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="MarkdownPreview.App.MainRoutesTests">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Excluded" Created="2009-10-16 20:22:22Z">
+      <Issue>
+       <Item>MarkdownPreview.App.MainRoutesTests</Item>
+      </Issue>
+      <Notes>
+       <User Name="Andre">
+        <Note Id="0" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="MarkdownPreview.App.WebApplicationTests">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Excluded" Created="2009-10-16 20:22:22Z">
+      <Issue>
+       <Item>MarkdownPreview.App.WebApplicationTests</Item>
+      </Issue>
+      <Notes>
+       <User Name="Andre">
+        <Note Id="0" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="MarkdownPreview.Controllers">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-16 20:22:22Z">
+      <Issue>
+       <Item>MarkdownPreview.Controllers</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="MarkdownPreview.Controllers.HomeControllerTests">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Excluded" Created="2009-10-16 20:22:22Z">
+      <Issue>
+       <Item>MarkdownPreview.Controllers.HomeControllerTests</Item>
+      </Issue>
+      <Notes>
+       <User Name="Andre">
+        <Note Id="0" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+  </Namespaces>
+  <Targets>
+   <Target Name="$(ProjectDir)/MarkdownPreview.Tests/bin/Debug/MarkdownPreview.dll">
+    <Modules>
+     <Module Name="markdownpreview.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2009-10-16 20:22:22Z">
+        <Issue Name="NoStrongName">
+         <Item>'MarkdownPreview.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2009-10-16 20:22:22Z">
+        <Issue>
+         <Item>'MarkdownPreview.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="">
+        <Types>
+         <Type Name="CoverageExcludeAttribute">
+          <Messages>
+           <Message TypeName="DeclareTypesInNamespaces" Category="Microsoft.Design" CheckId="CA1050" Status="Excluded" Created="2009-10-16 20:22:22Z">
+            <Issue>
+             <Item>'CoverageExcludeAttribute'</Item>
+            </Issue>
+            <Notes>
+             <User Name="Andre">
+              <Note Id="4" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="MarkdownPreview">
+        <Types>
+         <Type Name="Global">
+          <Members>
+           <Member Name="#Application_Start(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109" Created="2009-10-16 20:22:22Z">
+              <Issue>
+               <Item>'Global.Application_Start(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="MarkdownPreview.Controllers">
+        <Types>
+         <Type Name="HomeController">
+          <Members>
+           <Member Name="#Index()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Excluded" Created="2009-10-16 20:22:22Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'HomeController.Index()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="1" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/MarkdownPreview.Tests/bin/Debug/MarkdownPreview.Tests.dll">
+    <Modules>
+     <Module Name="markdownpreview.tests.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2009-10-16 20:22:22Z">
+        <Issue Name="NoStrongName">
+         <Item>'MarkdownPreview.Tests.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2009-10-16 20:22:22Z">
+        <Issue>
+         <Item>'MarkdownPreview.Tests.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="MarkdownPreview.App.WebApplicationTests">
+        <Types>
+         <Type Name="WhenUsingDefaultConstructor">
+          <Members>
+           <Member Name="#ShouldUseRoutingModuleEx()">
+            <Messages>
+             <Message TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711" Status="Excluded" Created="2009-10-16 20:35:21Z">
+              <Issue Name="MemberNewerVersion">
+               <Item>Ex</Item>
+               <Item>'WhenUsingDefaultConstructor.ShouldUseRoutingModuleEx()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="7" />
+               </User>
+              </Notes>
+             </Message>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Excluded" Created="2009-10-16 20:35:21Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'WhenUsingDefaultConstructor.ShouldUseRoutingModuleEx()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="8" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="MarkdownPreview.Controllers">
+        <Types>
+         <Type Name="ControllerTest`1">
+          <Members>
+           <Member Name="#ExecuteAction(System.Linq.Expressions.Expression`1&lt;System.Action`1&lt;!0&gt;&gt;)">
+            <Messages>
+             <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Excluded" Created="2009-10-16 20:22:22Z">
+              <Issue>
+               <Item>'ControllerTest&lt;T&gt;.ExecuteAction(Expression&lt;Action&lt;T&gt;&gt;)'</Item>
+               <Item>'Expression&lt;Action&lt;T&gt;&gt;'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="5" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#PrepareAction(System.Linq.Expressions.Expression`1&lt;System.Action`1&lt;!0&gt;&gt;)">
+            <Messages>
+             <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Excluded" Created="2009-10-16 20:22:22Z">
+              <Issue>
+               <Item>'actionExpression'</Item>
+               <Item>'ControllerTest&lt;T&gt;.PrepareAction(Expression&lt;Action&lt;T&gt;&gt;)'</Item>
+               <Item>'Expression&lt;Action&lt;T&gt;&gt;'</Item>
+               <Item>'LambdaExpression'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="3" />
+               </User>
+              </Notes>
+             </Message>
+             <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Excluded" Created="2009-10-16 20:22:22Z">
+              <Issue>
+               <Item>'ControllerTest&lt;T&gt;.PrepareAction(Expression&lt;Action&lt;T&gt;&gt;)'</Item>
+               <Item>'Expression&lt;Action&lt;T&gt;&gt;'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="5" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Notes>
+   <User Name="Andre">
+    <Note Id="0" Modified="2009-10-16 20:22:48Z">Contains unit tests</Note>
+    <Note Id="1" Modified="2009-10-16 20:31:06Z">Actions can't be static</Note>
+    <Note Id="3" Modified="2009-10-16 20:34:28Z">Increased type safety</Note>
+    <Note Id="4" Modified="2009-10-16 20:34:35Z">Required by NCover</Note>
+    <Note Id="5" Modified="2009-10-16 20:34:50Z">Using given API</Note>
+    <Note Id="7" Modified="2009-10-16 20:35:32Z">Given API</Note>
+    <Note Id="8" Modified="2009-10-16 20:35:43Z">Unit tests can't be static</Note>
+   </User>
+  </Notes>
+  <Rules>
+   <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+    <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+    <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   </Rule>
+   <Rule TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011">
+    <Resolution Name="Default">Consider changing the type of parameter {0} in {1} from {2} to its base type {3}. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Resolution>
+   </Rule>
+   <Rule TypeName="DeclareTypesInNamespaces" Category="Microsoft.Design" CheckId="CA1050">
+    <Resolution Name="Default">{0} should be declared inside a namespace.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006">
+    <Resolution Name="Default">Consider a design where {0} doesn't nest generic type {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711">
+    <Resolution Name="MemberNewerVersion">Either replace the suffix '{0}' in member name {1} with the suggested numeric alternate '2' or provide a more meaningful suffix that distinguishes it from the member it replaces.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+    <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+    <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   </Rule>
+   <Rule TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109">
+    <Resolution Name="Default">Consider making {0} not externally visible.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>

@@ -1,0 +1,3 @@
+Copyright (C) 2004-2005 by Milan Negovan
+
+http://aspnetresources.com/blog/markdown_announced.aspx
