@@ -2,10 +2,10 @@
 // $Id$
 #endregion
 
-namespace MarkdownPreview.Controllers.HomeControllerTests
+namespace MarkupPreview.Controllers.HomeControllerTests
 {
-  using Processing;
   using NUnit.Framework;
+  using Processing;
   using Rhino.Mocks;
 
   [TestFixture]

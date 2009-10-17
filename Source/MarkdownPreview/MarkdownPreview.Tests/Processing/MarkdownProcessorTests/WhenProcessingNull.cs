@@ -2,7 +2,7 @@
 // $Id$
 #endregion
 
-namespace MarkdownPreview.Processing.MarkdownProcessorTests
+namespace MarkupPreview.Processing.MarkdownProcessorTests
 {
   using NUnit.Framework;
 

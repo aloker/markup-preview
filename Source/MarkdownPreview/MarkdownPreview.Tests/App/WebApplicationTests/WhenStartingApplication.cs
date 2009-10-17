@@ -2,7 +2,7 @@
 // $Id$
 #endregion
 
-namespace MarkdownPreview.App.WebApplicationTests
+namespace MarkupPreview.App.WebApplicationTests
 {
   using System;
   using System.Linq;
@@ -12,8 +12,8 @@ namespace MarkdownPreview.App.WebApplicationTests
   using Castle.MonoRail.Framework.Services;
   using Castle.MonoRail.Views.Brail;
   using Controllers;
-  using Processing;
   using NUnit.Framework;
+  using Processing;
   using Rhino.Mocks;
 
   [TestFixture]

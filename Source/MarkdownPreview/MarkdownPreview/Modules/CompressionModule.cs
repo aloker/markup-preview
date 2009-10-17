@@ -2,7 +2,7 @@
 // $Id$
 #endregion
 
-namespace MarkdownPreview.Modules
+namespace MarkupPreview.Modules
 {
   using System;
   using System.IO;

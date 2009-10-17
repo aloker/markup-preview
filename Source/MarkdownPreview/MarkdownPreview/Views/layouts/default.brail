@@ -2,14 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Markdown Preview</title>
+  <title>Markup Preview</title>
   <link rel="Stylesheet" type="text/css" href="${siteRoot}/assets/css/main.css" />
   <script type="text/javascript" src="${siteRoot}/assets/js/prototype.js"></script>
 </head>
 <body>
 <div id="head">
-<h1>Markdown Preview</h1><p> (c) 2009 Andre Loker (<a href="http://blog.andreloker.de">blog.andreloker.de</a>) |
-Markdown by <a href="http://daringfireball.net/projects/markdown/">John Gruber</a></p>
+<h1>Markup Preview</h1><p> (c) 2009 Andre Loker (<a href="http://blog.andreloker.de">blog.andreloker.de</a>) |
+<a href="http://github.com/aloker/markup-preview">Markup Preview at GitHub</a></p>
 </div>
   ${ChildOutput}
 </body>

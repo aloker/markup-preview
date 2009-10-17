@@ -2,7 +2,7 @@
 // $Id$
 #endregion
 
-namespace MarkdownPreview.Controllers.HomeControllerTests
+namespace MarkupPreview.Controllers.HomeControllerTests
 {
   using NUnit.Framework;
 

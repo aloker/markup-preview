@@ -2,7 +2,7 @@
 // $Id$
 #endregion
 
-namespace MarkdownPreview.App.WebApplicationTests
+namespace MarkupPreview.App.WebApplicationTests
 {
   using Castle.MonoRail.Framework.Routing;
   using NUnit.Framework;

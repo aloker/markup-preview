@@ -2,9 +2,8 @@
 // $Id$
 #endregion
 
-namespace MarkdownPreview.Processing
+namespace MarkupPreview.Processing
 {
-
   /// <summary>
   /// Common interface for types that can act as a markup processor.
   /// </summary>

@@ -2,7 +2,7 @@
 // $Id$
 #endregion
 
-namespace MarkdownPreview.Processing
+namespace MarkupPreview.Processing
 {
   /// <summary>
   /// Defines the type of the input markup

@@ -2,9 +2,8 @@
 // $Id$
 #endregion
 
-namespace MarkdownPreview.App
+namespace MarkupPreview.App
 {
-  using System;
   using Castle.MonoRail.Framework.Routing;
 
   public static class MainRoutes

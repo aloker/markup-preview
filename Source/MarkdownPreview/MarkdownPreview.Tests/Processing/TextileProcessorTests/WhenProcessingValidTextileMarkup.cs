@@ -2,7 +2,7 @@
 // $Id$
 #endregion
 
-namespace MarkdownPreview.Processing.TextileProcessorTests
+namespace MarkupPreview.Processing.TextileProcessorTests
 {
   using System.Collections.Generic;
   using System.IO;

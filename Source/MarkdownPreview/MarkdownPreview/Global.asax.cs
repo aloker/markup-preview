@@ -1,4 +1,4 @@
-﻿namespace MarkdownPreview
+﻿namespace MarkupPreview
 {
   using System;
   using App;

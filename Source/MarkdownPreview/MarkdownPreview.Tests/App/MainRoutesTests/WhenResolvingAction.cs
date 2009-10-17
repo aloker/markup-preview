@@ -2,7 +2,7 @@
 // $Id$
 #endregion
 
-namespace MarkdownPreview.App.MainRoutesTests
+namespace MarkupPreview.App.MainRoutesTests
 {
   using System.Collections;
   using Castle.MonoRail.Framework.Routing;

@@ -2,7 +2,7 @@
 // $Id$
 #endregion
 
-namespace MarkdownPreview.Controllers
+namespace MarkupPreview.Controllers
 {
   using System;
   using Castle.MonoRail.Framework;
