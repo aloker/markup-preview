@@ -5,3 +5,4 @@ StyleCop.Cache
 *.user
 *.suo
 /Source/MarkdownPreview/MarkdownPreview/MarkdownPreview.Publish.xml
+/Source/MarkupPreview/MarkupPreview/MarkupPreview.Publish.xml

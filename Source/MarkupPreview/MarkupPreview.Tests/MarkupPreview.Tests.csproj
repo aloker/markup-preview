@@ -123,7 +123,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MarkdownPreview\MarkupPreview.csproj">
+    <ProjectReference Include="..\MarkupPreview\MarkupPreview.csproj">
       <Project>{DAB8DD32-3A0F-4D84-85F7-7AFBCDAC5DDC}</Project>
       <Name>MarkupPreview</Name>
     </ProjectReference>

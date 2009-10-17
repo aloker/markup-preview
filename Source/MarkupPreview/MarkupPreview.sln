@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkupPreview", "MarkdownPreview\MarkupPreview.csproj", "{DAB8DD32-3A0F-4D84-85F7-7AFBCDAC5DDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkupPreview", "MarkupPreview\MarkupPreview.csproj", "{DAB8DD32-3A0F-4D84-85F7-7AFBCDAC5DDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkupPreview.Tests", "MarkdownPreview.Tests\MarkupPreview.Tests.csproj", "{7A2988D2-CAAF-404B-8599-04494F9E6E02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkupPreview.Tests", "MarkupPreview.Tests\MarkupPreview.Tests.csproj", "{7A2988D2-CAAF-404B-8599-04494F9E6E02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
