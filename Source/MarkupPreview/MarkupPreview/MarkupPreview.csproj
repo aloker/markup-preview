@@ -131,6 +131,7 @@
   <ItemGroup>
     <Content Include="assets\css\main.css" />
     <Content Include="assets\js\prototype.js" />
+    <Content Include="assets\js\site.js" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />

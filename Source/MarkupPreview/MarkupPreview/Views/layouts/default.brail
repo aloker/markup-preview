@@ -3,8 +3,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Markup Preview</title>
+  <meta name="author" content="Andre Loker" /> 
+  <meta name="description" content="Transforms markup of different kind to HTML" /> 
+  <meta name="keywords" content="markup, markdown, html, transform, git, github, andre, loker" /> 
   <link rel="Stylesheet" type="text/css" href="${siteRoot}/assets/css/main.css" />
   <script type="text/javascript" src="${siteRoot}/assets/js/prototype.js"></script>
+  <script type="text/javascript" src="${siteRoot}/assets/js/site.js?v1"></script>
 </head>
 <body>
 <div id="head">

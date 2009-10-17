@@ -1,54 +1,13 @@
 <div id="left" class="container">
-<h2>Markup ${FormHelper.Select("type", markupTypes, {@onchange: 'site.process();'})}</h2>
-<div class="inner">
-${FormHelper.TextArea("source", {@rows:20, @cols: 80, @onchange: 'site.process();', @onkeypress: 'site.resizeTextarea(this);', @onkeyup: 'site.resizeTextarea(this);'})}
+  <h2>Markup ${FormHelper.Select("type", markupTypes)}</h2>
+  <div class="inner">${FormHelper.TextArea("source", {@rows:20, @cols: 60})}</div>
 </div>
-</div>
-
 <div id="right" class="container">
-<h2>HTML</h2>
-<div id="destination" class="inner"></div>
+  <h2>HTML</h2>
+  <div id="destination" class="inner"></div>
 </div>
-
-<script type="text/javascript">  /*<![CDATA[*/
-  var Site = new Class.create({
-
-    previousValue: '',
-    previousType: -1,
-
-    initialize: function() {
-      this.previousValue = '';
-      new PeriodicalExecuter(this.process, 2);
-      $('source').focus();
-    },
-
-    process: function() {
-      var newValue = $('source').value;
-      var newType =$("type").value;
-      if (newValue != this.previousValue || newType != this.previousType) {
-        new Ajax.Request("${UrlHelper.For({@controller:'home', @action:'process'})}", {
-        parameters: { source: newValue, type: newType }
-        });
-        this.previousValue = newValue;
-        this.previousType = newType;
-      }
-    },
-
-    // based on http://blog.bigsmoke.us/2007/02/18/automatic-html-textarea-resizing
-    resizeTextarea: function(textArea) {    
-      if (!textArea.originalRowCount) {
-        textArea.originalRowCount = textArea.rows;
-      }
-      var rows = textArea.value.split('\n');
-      var neededRows = 1;
-      for (var i = 0; i < rows.length; i++) {
-        var row = rows[i];
-        neededRows += (row.length > textArea.cols) ? Math.floor(row.length / textArea.cols) : 1;
-      }
-      textArea.rows = Math.max(neededRows, textArea.originalRowCount);
-    }
-  });
-
-var site = new Site();  
-  
-/*]]>*/</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var site = new Site("${UrlHelper.For({@controller:'home', @action:'process'})}");
+/*]]>*/
+</script>

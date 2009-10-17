@@ -1,16 +1,15 @@
 #region Copyright © 2009 Andre Loker (mail@andreloker.de). All rights reserved.
-
 // $Id$
 #endregion
 
-using System;
-using System.IO;
-using System.Reflection;
-using Castle.MonoRail.Framework;
-using MarkupPreview.Processing;
-
 namespace MarkupPreview.Controllers
 {
+  using System;
+  using System.IO;
+  using System.Reflection;
+  using Castle.MonoRail.Framework;
+  using Processing;
+
   [Layout("default")]
   public class HomeController : SmartDispatcherController
   {
@@ -23,7 +22,7 @@ namespace MarkupPreview.Controllers
 
     private void LoadMarkupTypes()
     {
-      PropertyBag["markupTypes"] = Enum.GetValues(typeof (MarkupType));
+      PropertyBag["markupTypes"] = Enum.GetValues(typeof(MarkupType));
     }
 
     public void Process(MarkupType type, string source)
