@@ -1,11 +1,12 @@
 ﻿html, body
 {
-  font-family: Verdana;
+  font-family: Verdana, Arial, Sans-Serif;
   height:100%;
   font-size:9pt;
   padding:0;
   margin:0;
   background-color:#ffffff;
+  color:Black;  
 }
 
 h1 { font-size:16pt;}
@@ -16,8 +17,9 @@ h5 { font-size:10pt;}
 h6 { font-size:9pt;}
 
 #head
-{
+{  
   background-color:#f8f8f8;  
+  color:Black;
   border-bottom: solid 1px #ccc;
   padding:1em;  
 }
@@ -28,11 +30,13 @@ a:visited,
 a:active
 {
   color:Black;
+  background-color:Transparent;
 }
 
 a:hover
 {
-  color:Gray;
+  color:Gray;  
+  background-color:Transparent;
 }
 
 #head h1,
@@ -66,6 +70,6 @@ a:hover
 { 
   width: 99%;
   border:none;
-  font-family:Consolas, "Courier New", Courier;
+  font-family:Consolas, "Courier New", Courier, Monospace;
   font-size:9pt;  
 }
