@@ -1,4 +1,4 @@
-Markdown Preview
+Markup Preview
 ================
 
 This is a very(!) simple web application to preview the HTML output of markup text.
