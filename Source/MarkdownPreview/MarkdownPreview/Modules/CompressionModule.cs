@@ -11,6 +11,12 @@ namespace MarkdownPreview.Modules
   using System.Web;
   using Castle.MonoRail.Framework;
 
+  /// <summary>
+  /// Provides compression for MonoRail documents.
+  /// </summary>
+  /// <remarks>
+  /// Untested (taken from a different project)
+  /// </remarks>
   public class CompressionModule : IHttpModule
   {
     public static readonly string EncodingGzip = "gzip";

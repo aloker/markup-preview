@@ -1,1 +1,1 @@
-page.ReplaceHtml("destination", {@partial: '/home/_processed'})
+page.ReplaceHtml("destination", result)

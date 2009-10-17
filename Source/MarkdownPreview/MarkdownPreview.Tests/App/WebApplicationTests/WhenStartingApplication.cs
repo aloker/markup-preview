@@ -12,6 +12,7 @@ namespace MarkdownPreview.App.WebApplicationTests
   using Castle.MonoRail.Framework.Services;
   using Castle.MonoRail.Views.Brail;
   using Controllers;
+  using Processing;
   using NUnit.Framework;
   using Rhino.Mocks;
 
@@ -58,6 +59,12 @@ namespace MarkdownPreview.App.WebApplicationTests
       app.Initialized(container);
 
       urlBuilder.AssertWasCalled(x => x.UseExtensions = false);
+    }
+
+    [Test]
+    public void ShouldHaveRegisterdMarkupProcessorFactory()
+    {
+      Assert.That(app.Container.Kernel.GetHandler(typeof(IMarkupProcessorFactory)), Is.Not.Null);
     }
   }
 }

@@ -147,13 +147,16 @@
     <Compile Include="Processing\IMarkupProcessor.cs" />
     <Compile Include="Processing\IMarkupProcessorFactory.cs" />
     <Compile Include="Processing\MarkdownProcessor.cs" />
+    <Compile Include="Processing\MarkupProcessorFactory.cs" />
+    <Compile Include="Processing\MarkupType.cs" />
     <Compile Include="Processing\TextileProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\home\index.brail" />
     <None Include="Views\home\process.brailjs" />
-    <None Include="Views\home\_processed.brail" />
+    <None Include="Views\home\error.brailjs" />
+    <None Include="Views\home\_error.brail" />
     <None Include="Views\layouts\default.brail" />
   </ItemGroup>
   <ItemGroup>

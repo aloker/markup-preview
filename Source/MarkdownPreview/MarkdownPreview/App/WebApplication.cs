@@ -17,6 +17,7 @@ namespace MarkdownPreview.App
   using Castle.MonoRail.Views.Brail;
   using Castle.MonoRail.WindsorExtension;
   using Castle.Windsor;
+  using Processing;
 
   public class WebApplication : HttpApplication, 
                                 IContainerAccessor, 
@@ -89,6 +90,11 @@ namespace MarkdownPreview.App
     private static void RegisterComponents()
     {
       windsorContainer.Register(AllTypes.FromAssembly(Assembly.GetExecutingAssembly()).BasedOn<Controller>());
+      windsorContainer.Register(
+        Component
+          .For<IMarkupProcessorFactory>()
+          .ImplementedBy<MarkupProcessorFactory>()
+          .LifeStyle.Singleton);
     }
   }
 }

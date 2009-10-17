@@ -4,18 +4,32 @@
 
 namespace MarkdownPreview.Controllers
 {
+  using System;
   using Castle.MonoRail.Framework;
+  using Processing;
 
   [Layout("default")]
   public class HomeController : SmartDispatcherController
   {
+    public IMarkupProcessorFactory ProcessorFactory { get; set; }
+
     public void Index()
     {
+      PropertyBag["markupTypes"] = Enum.GetValues(typeof(MarkupType));
     }
 
-    public void Process(string source)
+    public void Process(MarkupType type, string source)
     {
-      PropertyBag["result"] = source ?? string.Empty;
+      try
+      {
+        var processor = ProcessorFactory.GetProcessor(type);
+        PropertyBag["result"] = processor.Process(source);
+      }
+      catch (ArgumentOutOfRangeException)
+      {
+        RenderView("error");
+        PropertyBag["message"] = "No suitable markup processor found";
+      }
     }
   }
 }

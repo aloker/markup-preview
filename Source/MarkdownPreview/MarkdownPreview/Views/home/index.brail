@@ -1,5 +1,5 @@
 <div id="left" class="container">
-<h2>Markdown</h2>
+<h2>Markup ${FormHelper.Select("type", markupTypes, {@onchange: 'site.process();'})}</h2>
 <div class="inner">
 ${FormHelper.TextArea("source", {@rows:20, @cols: 80, @onchange: 'site.process();', @onkeypress: 'site.resizeTextarea(this);', @onkeyup: 'site.resizeTextarea(this);'})}
 </div>
@@ -14,6 +14,7 @@ ${FormHelper.TextArea("source", {@rows:20, @cols: 80, @onchange: 'site.process()
   var Site = new Class.create({
 
     previousValue: '',
+    previousType: -1,
 
     initialize: function() {
       this.previousValue = '';
@@ -22,12 +23,14 @@ ${FormHelper.TextArea("source", {@rows:20, @cols: 80, @onchange: 'site.process()
     },
 
     process: function() {
-      var val = $('source').value;
-      if (val != this.previousValue) {
+      var newValue = $('source').value;
+      var newType =$("type").value;
+      if (newValue != this.previousValue || newType != this.previousType) {
         new Ajax.Request("${UrlHelper.For({@controller:'home', @action:'process'})}", {
-          parameters: { source: val }
+        parameters: { source: newValue, type: newType }
         });
-        this.previousValue = val;
+        this.previousValue = newValue;
+        this.previousType = newType;
       }
     },
 

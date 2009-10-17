@@ -112,9 +112,11 @@
     <Compile Include="Controllers\ControllerTest.cs" />
     <Compile Include="Controllers\HomeControllerTests\WhenCallingIndexAction.cs" />
     <Compile Include="Controllers\HomeControllerTests\WhenProcessingInput.cs" />
-    <Compile Include="Controllers\HomeControllerTests\WhenSendingNull.cs" />
+    <Compile Include="Controllers\HomeControllerTests\WhenProvidingInvalidMarkupType.cs" />
     <Compile Include="Processing\MarkdownProcessorTests\WhenProcessingNull.cs" />
     <Compile Include="Processing\MarkdownProcessorTests\WhenProcessingValidMarkdownInput.cs" />
+    <Compile Include="Processing\MarkupProcessorFactoryTests\WhenRequestingInvalidProcessor.cs" />
+    <Compile Include="Processing\MarkupProcessorFactoryTests\WhenRequestingValidProcessor.cs" />
     <Compile Include="Processing\ProcessorTestHelper.cs" />
     <Compile Include="Processing\TextileProcessorTests\WhenProcessingNull.cs" />
     <Compile Include="Processing\TextileProcessorTests\WhenProcessingValidTextileMarkup.cs" />

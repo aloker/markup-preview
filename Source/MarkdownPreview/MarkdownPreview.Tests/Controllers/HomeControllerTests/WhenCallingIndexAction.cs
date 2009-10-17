@@ -10,11 +10,11 @@ namespace MarkdownPreview.Controllers.HomeControllerTests
   public class WhenCallingIndexAction : ControllerTest<HomeController>
   {
     [Test]
-    public void ShouldRenderDefaultView()
+    public void ShouldSetMarkupTypes()
     {
       ExecuteAction(x => x.Index());
 
-      Assert.That(ControllerContext.SelectedViewName, Is.EqualTo("Home\\Index"));
+      Assert.That(ControllerContext.PropertyBag["markupTypes"], Is.Not.Empty);
     }
   }
 }

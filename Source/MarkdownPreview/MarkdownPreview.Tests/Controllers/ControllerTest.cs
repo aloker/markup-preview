@@ -15,6 +15,11 @@ namespace MarkdownPreview.Controllers
   {
     private T controller;
 
+    public T Controller
+    {
+      get { return controller; }
+    }
+
     [SetUp]
     public virtual void Setup()
     {

@@ -26,7 +26,7 @@ namespace MarkdownPreview.Processing.MarkdownProcessorTests
 
       yield return new[]
       {
-        File.ReadAllText("Examples\\markdown-input.txt").StripReturn(), 
+        File.ReadAllText("Examples\\markdown-input.txt"), 
         File.ReadAllText("Examples\\markdown-expected.txt").StripReturn()
       };
     }
