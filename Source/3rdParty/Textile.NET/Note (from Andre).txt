@@ -1,0 +1,6 @@
+According to the project site (http://textilenet.codeplex.com/license) 
+Textile.NET uses the Apache License 2. 
+
+See ASL - Apache Software Foundation License.txt for details.
+
+~ Andre Loker

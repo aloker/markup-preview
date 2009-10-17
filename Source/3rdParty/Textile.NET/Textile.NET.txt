@@ -1,0 +1,15 @@
+Textile.NET is, surprisingly, a textile formatter for .NET projects. Textile is
+a "human web text generator" (http://www.textism.com/tools/textile/) that is 
+useful for rapid web writings such as Wiki syntax or blog articles. From a 
+simple and intuitive syntax it creates well formed HTML with advanced 
+formatting features, while also allowing the user to customize the output. 
+Textile.NET can be tested online at http://www.lordabdul.net/labsoft/Textile/.
+
+License:
+
+Attribution-ShareAlike 3.0 Unported
+http://creativecommons.org/licenses/by-sa/3.0/
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"/></a><br/>
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0  License</a>.
