@@ -1,7 +1,0 @@
-<%
-[MarkDown]
-def render():
-  return result
-end
-%>
-${render()}
