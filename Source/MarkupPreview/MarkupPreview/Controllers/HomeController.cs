@@ -1,13 +1,16 @@
 #region Copyright © 2009 Andre Loker (mail@andreloker.de). All rights reserved.
+
 // $Id$
 #endregion
 
+using System;
+using System.IO;
+using System.Reflection;
+using Castle.MonoRail.Framework;
+using MarkupPreview.Processing;
+
 namespace MarkupPreview.Controllers
 {
-  using System;
-  using Castle.MonoRail.Framework;
-  using Processing;
-
   [Layout("default")]
   public class HomeController : SmartDispatcherController
   {
@@ -15,7 +18,12 @@ namespace MarkupPreview.Controllers
 
     public void Index()
     {
-      PropertyBag["markupTypes"] = Enum.GetValues(typeof(MarkupType));
+      LoadMarkupTypes();
+    }
+
+    private void LoadMarkupTypes()
+    {
+      PropertyBag["markupTypes"] = Enum.GetValues(typeof (MarkupType));
     }
 
     public void Process(MarkupType type, string source)
@@ -30,6 +38,22 @@ namespace MarkupPreview.Controllers
         RenderView("error");
         PropertyBag["message"] = "No suitable markup processor found";
       }
+    }
+
+    public void Readme()
+    {
+      var assembly = Assembly.GetExecutingAssembly();
+      string content;
+
+      using (var stream = assembly.GetManifestResourceStream("MarkupPreview.Resources.README.md"))
+      {
+        content = new StreamReader(stream).ReadToEnd();
+      }
+
+      PropertyBag["source"] = content;
+      PropertyBag["type"] = MarkupType.Markdown;
+      LoadMarkupTypes();
+      RenderView("index");
     }
   }
 }

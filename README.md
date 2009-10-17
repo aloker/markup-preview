@@ -20,6 +20,7 @@ Currently the following markup languages are supported:
 
 For the licences of the 3rd party libraries see the license.txt files in the respective folder under _3rdParty_
 
-A demo of the application can be found at <http://markup.andreloker.de>
+* A demo can be found at <http://markup.andreloker.de>
+* [Project page on GitHub.com](http://github.com/aloker/markup-preview)
 
-~ Andre Loker <mail@andreloker.de>
+~ Andre Loker

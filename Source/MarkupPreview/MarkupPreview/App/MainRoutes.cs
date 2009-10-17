@@ -10,6 +10,10 @@ namespace MarkupPreview.App
   {
     public static void Setup(IRoutingRuleContainer routes)
     {
+      routes.Add(new PatternRoute("readme", "/readme")
+        .DefaultForController().Is("home")
+        .DefaultForAction().Is("readme"));
+
       routes.Add(new PatternRoute("home", "/[controller]/[action]")
         .DefaultForController().Is("home")
         .DefaultForAction().Is("index"));
