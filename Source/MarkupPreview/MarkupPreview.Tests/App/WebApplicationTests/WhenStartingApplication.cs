@@ -62,7 +62,7 @@ namespace MarkupPreview.App.WebApplicationTests
     }
 
     [Test]
-    public void ShouldHaveRegisterdMarkupProcessorFactory()
+    public void ShouldRegisterMarkupProcessorFactory()
     {
       Assert.That(app.Container.Kernel.GetHandler(typeof(IMarkupProcessorFactory)), Is.Not.Null);
     }

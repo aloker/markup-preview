@@ -1,4 +1,5 @@
 #region Copyright © 2009 Andre Loker (mail@andreloker.de). All rights reserved.
+
 // $Id$
 #endregion
 
@@ -12,7 +13,7 @@ namespace MarkupPreview.Processing
     /// <summary>
     /// Markdown markup.
     /// </summary>
-    Markdown = 1, 
+    Markdown, 
 
     /// <summary>
     /// Textile markup.

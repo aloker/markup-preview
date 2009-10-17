@@ -21,8 +21,11 @@
   <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
  </ProjectOptions>
  <Targets>
-  <Target Name="$(ProjectDir)/MarkdownPreview.Tests/bin/Debug/MarkdownPreview.dll" Analyze="True" AnalyzeAllChildren="True" />
-  <Target Name="$(ProjectDir)/MarkdownPreview.Tests/bin/Debug/MarkdownPreview.Tests.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <AssemblyReferenceDirectories>
+   <Directory>$(ProjectDir)/MarkdownPreview.Tests/bin/Debug/</Directory>
+  </AssemblyReferenceDirectories>
+  <Target Name="$(ProjectDir)/MarkupPreview.Tests/bin/Debug/MarkupPreview.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/MarkupPreview.Tests/bin/Debug/MarkupPreview.Tests.dll" Analyze="True" AnalyzeAllChildren="True" />
  </Targets>
  <Rules>
   <RuleFiles>
@@ -41,89 +44,110 @@
  </Rules>
  <FxCopReport Version="1.36">
   <Namespaces>
-   <Namespace Name="MarkdownPreview">
+   <Namespace Name="MarkupPreview">
     <Messages>
-     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-16 20:22:22Z">
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-17 08:39:10Z">
       <Issue>
-       <Item>MarkdownPreview</Item>
+       <Item>MarkupPreview</Item>
       </Issue>
      </Message>
     </Messages>
    </Namespace>
-   <Namespace Name="MarkdownPreview.App">
+   <Namespace Name="MarkupPreview.App">
     <Messages>
-     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-16 20:22:22Z">
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-17 08:39:10Z">
       <Issue>
-       <Item>MarkdownPreview.App</Item>
+       <Item>MarkupPreview.App</Item>
       </Issue>
      </Message>
     </Messages>
    </Namespace>
-   <Namespace Name="MarkdownPreview.App.MainRoutesTests">
+   <Namespace Name="MarkupPreview.App.MainRoutesTests">
     <Messages>
-     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Excluded" Created="2009-10-16 20:22:22Z">
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-17 08:39:10Z">
       <Issue>
-       <Item>MarkdownPreview.App.MainRoutesTests</Item>
-      </Issue>
-      <Notes>
-       <User Name="Andre">
-        <Note Id="0" />
-       </User>
-      </Notes>
-     </Message>
-    </Messages>
-   </Namespace>
-   <Namespace Name="MarkdownPreview.App.WebApplicationTests">
-    <Messages>
-     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Excluded" Created="2009-10-16 20:22:22Z">
-      <Issue>
-       <Item>MarkdownPreview.App.WebApplicationTests</Item>
-      </Issue>
-      <Notes>
-       <User Name="Andre">
-        <Note Id="0" />
-       </User>
-      </Notes>
-     </Message>
-    </Messages>
-   </Namespace>
-   <Namespace Name="MarkdownPreview.Controllers">
-    <Messages>
-     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-16 20:22:22Z">
-      <Issue>
-       <Item>MarkdownPreview.Controllers</Item>
+       <Item>MarkupPreview.App.MainRoutesTests</Item>
       </Issue>
      </Message>
     </Messages>
    </Namespace>
-   <Namespace Name="MarkdownPreview.Controllers.HomeControllerTests">
+   <Namespace Name="MarkupPreview.App.WebApplicationTests">
     <Messages>
-     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Excluded" Created="2009-10-16 20:22:22Z">
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-17 08:39:10Z">
       <Issue>
-       <Item>MarkdownPreview.Controllers.HomeControllerTests</Item>
+       <Item>MarkupPreview.App.WebApplicationTests</Item>
       </Issue>
-      <Notes>
-       <User Name="Andre">
-        <Note Id="0" />
-       </User>
-      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="MarkupPreview.Controllers">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-17 08:39:10Z">
+      <Issue>
+       <Item>MarkupPreview.Controllers</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="MarkupPreview.Controllers.HomeControllerTests">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-17 08:39:10Z">
+      <Issue>
+       <Item>MarkupPreview.Controllers.HomeControllerTests</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="MarkupPreview.Modules">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-17 08:39:10Z">
+      <Issue>
+       <Item>MarkupPreview.Modules</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="MarkupPreview.Processing.MarkdownProcessorTests">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-17 08:39:10Z">
+      <Issue>
+       <Item>MarkupPreview.Processing.MarkdownProcessorTests</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="MarkupPreview.Processing.MarkupProcessorFactoryTests">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-17 08:39:10Z">
+      <Issue>
+       <Item>MarkupPreview.Processing.MarkupProcessorFactoryTests</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="MarkupPreview.Processing.TextileProcessorTests">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2009-10-17 08:39:10Z">
+      <Issue>
+       <Item>MarkupPreview.Processing.TextileProcessorTests</Item>
+      </Issue>
      </Message>
     </Messages>
    </Namespace>
   </Namespaces>
   <Targets>
-   <Target Name="$(ProjectDir)/MarkdownPreview.Tests/bin/Debug/MarkdownPreview.dll">
+   <Target Name="$(ProjectDir)/MarkupPreview.Tests/bin/Debug/MarkupPreview.dll">
     <Modules>
-     <Module Name="markdownpreview.dll">
+     <Module Name="markuppreview.dll">
       <Messages>
-       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2009-10-16 20:22:22Z">
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2009-10-17 08:39:10Z">
         <Issue Name="NoStrongName">
-         <Item>'MarkdownPreview.dll'</Item>
+         <Item>'MarkupPreview.dll'</Item>
         </Issue>
        </Message>
-       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2009-10-16 20:22:22Z">
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2009-10-17 08:39:10Z">
         <Issue>
-         <Item>'MarkdownPreview.dll'</Item>
+         <Item>'MarkupPreview.dll'</Item>
         </Issue>
        </Message>
       </Messages>
@@ -132,13 +156,13 @@
         <Types>
          <Type Name="CoverageExcludeAttribute">
           <Messages>
-           <Message TypeName="DeclareTypesInNamespaces" Category="Microsoft.Design" CheckId="CA1050" Status="Excluded" Created="2009-10-16 20:22:22Z">
+           <Message TypeName="DeclareTypesInNamespaces" Category="Microsoft.Design" CheckId="CA1050" Status="Excluded" Created="2009-10-17 08:39:10Z">
             <Issue>
              <Item>'CoverageExcludeAttribute'</Item>
             </Issue>
             <Notes>
              <User Name="Andre">
-              <Note Id="4" />
+              <Note Id="9" />
              </User>
             </Notes>
            </Message>
@@ -146,13 +170,13 @@
          </Type>
         </Types>
        </Namespace>
-       <Namespace Name="MarkdownPreview">
+       <Namespace Name="MarkupPreview">
         <Types>
          <Type Name="Global">
           <Members>
            <Member Name="#Application_Start(System.Object,System.EventArgs)">
             <Messages>
-             <Message TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109" Created="2009-10-16 20:22:22Z">
+             <Message TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109" Created="2009-10-17 08:39:10Z">
               <Issue>
                <Item>'Global.Application_Start(object, EventArgs)'</Item>
               </Issue>
@@ -163,19 +187,20 @@
          </Type>
         </Types>
        </Namespace>
-       <Namespace Name="MarkdownPreview.Controllers">
+       <Namespace Name="MarkupPreview.Modules">
         <Types>
-         <Type Name="HomeController">
+         <Type Name="CompressionModule">
           <Members>
-           <Member Name="#Index()">
+           <Member Name="#EncodingGzip">
             <Messages>
-             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Excluded" Created="2009-10-16 20:22:22Z" FixCategory="DependsOnFix">
-              <Issue>
-               <Item>'HomeController.Index()'</Item>
+             <Message Id="Gzip" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-10-17 08:39:10Z">
+              <Issue Name="Member">
+               <Item>Gzip</Item>
+               <Item>'CompressionModule.EncodingGzip'</Item>
               </Issue>
               <Notes>
                <User Name="Andre">
-                <Note Id="1" />
+                <Note Id="12" />
                </User>
               </Notes>
              </Message>
@@ -189,46 +214,46 @@
      </Module>
     </Modules>
    </Target>
-   <Target Name="$(ProjectDir)/MarkdownPreview.Tests/bin/Debug/MarkdownPreview.Tests.dll">
+   <Target Name="$(ProjectDir)/MarkupPreview.Tests/bin/Debug/MarkupPreview.Tests.dll">
     <Modules>
-     <Module Name="markdownpreview.tests.dll">
+     <Module Name="markuppreview.tests.dll">
       <Messages>
-       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2009-10-16 20:22:22Z">
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2009-10-17 08:39:10Z">
         <Issue Name="NoStrongName">
-         <Item>'MarkdownPreview.Tests.dll'</Item>
+         <Item>'MarkupPreview.Tests.dll'</Item>
         </Issue>
        </Message>
-       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2009-10-16 20:22:22Z">
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2009-10-17 08:39:10Z">
         <Issue>
-         <Item>'MarkdownPreview.Tests.dll'</Item>
+         <Item>'MarkupPreview.Tests.dll'</Item>
         </Issue>
        </Message>
       </Messages>
       <Namespaces>
-       <Namespace Name="MarkdownPreview.App.WebApplicationTests">
+       <Namespace Name="MarkupPreview.App.WebApplicationTests">
         <Types>
          <Type Name="WhenUsingDefaultConstructor">
           <Members>
            <Member Name="#ShouldUseRoutingModuleEx()">
             <Messages>
-             <Message TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711" Status="Excluded" Created="2009-10-16 20:35:21Z">
+             <Message TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711" Status="Excluded" Created="2009-10-17 08:39:10Z">
               <Issue Name="MemberNewerVersion">
                <Item>Ex</Item>
                <Item>'WhenUsingDefaultConstructor.ShouldUseRoutingModuleEx()'</Item>
               </Issue>
               <Notes>
                <User Name="Andre">
-                <Note Id="7" />
+                <Note Id="13" />
                </User>
               </Notes>
              </Message>
-             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Excluded" Created="2009-10-16 20:35:21Z" FixCategory="DependsOnFix">
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Excluded" Created="2009-10-17 08:39:10Z" FixCategory="DependsOnFix">
               <Issue>
                <Item>'WhenUsingDefaultConstructor.ShouldUseRoutingModuleEx()'</Item>
               </Issue>
               <Notes>
                <User Name="Andre">
-                <Note Id="8" />
+                <Note Id="2" />
                </User>
               </Notes>
              </Message>
@@ -238,20 +263,20 @@
          </Type>
         </Types>
        </Namespace>
-       <Namespace Name="MarkdownPreview.Controllers">
+       <Namespace Name="MarkupPreview.Controllers">
         <Types>
          <Type Name="ControllerTest`1">
           <Members>
            <Member Name="#ExecuteAction(System.Linq.Expressions.Expression`1&lt;System.Action`1&lt;!0&gt;&gt;)">
             <Messages>
-             <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Excluded" Created="2009-10-16 20:22:22Z">
+             <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Excluded" Created="2009-10-17 08:39:10Z">
               <Issue>
                <Item>'ControllerTest&lt;T&gt;.ExecuteAction(Expression&lt;Action&lt;T&gt;&gt;)'</Item>
                <Item>'Expression&lt;Action&lt;T&gt;&gt;'</Item>
               </Issue>
               <Notes>
                <User Name="Andre">
-                <Note Id="5" />
+                <Note Id="11" />
                </User>
               </Notes>
              </Message>
@@ -259,7 +284,7 @@
            </Member>
            <Member Name="#PrepareAction(System.Linq.Expressions.Expression`1&lt;System.Action`1&lt;!0&gt;&gt;)">
             <Messages>
-             <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Excluded" Created="2009-10-16 20:22:22Z">
+             <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Status="Excluded" Created="2009-10-17 08:39:10Z">
               <Issue>
                <Item>'actionExpression'</Item>
                <Item>'ControllerTest&lt;T&gt;.PrepareAction(Expression&lt;Action&lt;T&gt;&gt;)'</Item>
@@ -268,18 +293,191 @@
               </Issue>
               <Notes>
                <User Name="Andre">
-                <Note Id="3" />
+                <Note Id="10" />
                </User>
               </Notes>
              </Message>
-             <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Excluded" Created="2009-10-16 20:22:22Z">
+             <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Excluded" Created="2009-10-17 08:39:10Z">
               <Issue>
                <Item>'ControllerTest&lt;T&gt;.PrepareAction(Expression&lt;Action&lt;T&gt;&gt;)'</Item>
                <Item>'Expression&lt;Action&lt;T&gt;&gt;'</Item>
               </Issue>
               <Notes>
                <User Name="Andre">
-                <Note Id="5" />
+                <Note Id="11" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="MarkupPreview.Controllers.HomeControllerTests">
+        <Types>
+         <Type Name="WhenProvidingInvalidMarkupType">
+          <Members>
+           <Member Name="#Setup()">
+            <Messages>
+             <Message TypeName="InstantiateArgumentExceptionsCorrectly" Category="Microsoft.Usage" CheckId="CA2208" Status="Excluded" Created="2009-10-17 08:39:10Z">
+              <Issue Name="IncorrectParameterName">
+               <Item>'WhenProvidingInvalidMarkupType.Setup()'</Item>
+               <Item>markupType</Item>
+               <Item>'paramName'</Item>
+               <Item>'ArgumentOutOfRangeException'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="14" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="MarkupPreview.Processing.MarkdownProcessorTests">
+        <Types>
+         <Type Name="WhenProcessingNull">
+          <Members>
+           <Member Name="#ShouldReturnEmptyString()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Excluded" Created="2009-10-17 08:39:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'WhenProcessingNull.ShouldReturnEmptyString()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="WhenProcessingValidMarkdownInput">
+          <Members>
+           <Member Name="#GetTestData()">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2009-10-17 08:39:10Z">
+              <Issue>
+               <Item>'WhenProcessingValidMarkdownInput.GetTestData()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="6" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ShouldTransformMarkdownToHtml(System.String,System.String)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Excluded" Created="2009-10-17 08:39:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'WhenProcessingValidMarkdownInput.ShouldTransformMarkdownToHtml(string, string)'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="MarkupPreview.Processing.MarkupProcessorFactoryTests">
+        <Types>
+         <Type Name="WhenRequestingInvalidProcessor">
+          <Members>
+           <Member Name="#ShouldThrowArgumentOutOfRange()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Excluded" Created="2009-10-17 08:39:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'WhenRequestingInvalidProcessor.ShouldThrowArgumentOutOfRange()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="WhenRequestingValidProcessor">
+          <Members>
+           <Member Name="#ShouldReturnCorrectInstance(MarkupPreview.Processing.MarkupType,System.Type)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Excluded" Created="2009-10-17 08:39:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'WhenRequestingValidProcessor.ShouldReturnCorrectInstance(MarkupType, Type)'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="MarkupPreview.Processing.TextileProcessorTests">
+        <Types>
+         <Type Name="WhenProcessingNull">
+          <Members>
+           <Member Name="#ShouldReturnEmptyString()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Excluded" Created="2009-10-17 08:39:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'WhenProcessingNull.ShouldReturnEmptyString()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="WhenProcessingValidTextileMarkup">
+          <Members>
+           <Member Name="#GetTestData()">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2009-10-17 08:39:10Z">
+              <Issue>
+               <Item>'WhenProcessingValidTextileMarkup.GetTestData()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="6" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ShouldTransformTextileToHtml(System.String,System.String)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Excluded" Created="2009-10-17 08:39:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'WhenProcessingValidTextileMarkup.ShouldTransformTextileToHtml(string, string)'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Andre">
+                <Note Id="2" />
                </User>
               </Notes>
              </Message>
@@ -296,13 +494,14 @@
   </Targets>
   <Notes>
    <User Name="Andre">
-    <Note Id="0" Modified="2009-10-16 20:22:48Z">Contains unit tests</Note>
-    <Note Id="1" Modified="2009-10-16 20:31:06Z">Actions can't be static</Note>
-    <Note Id="3" Modified="2009-10-16 20:34:28Z">Increased type safety</Note>
-    <Note Id="4" Modified="2009-10-16 20:34:35Z">Required by NCover</Note>
-    <Note Id="5" Modified="2009-10-16 20:34:50Z">Using given API</Note>
-    <Note Id="7" Modified="2009-10-16 20:35:32Z">Given API</Note>
-    <Note Id="8" Modified="2009-10-16 20:35:43Z">Unit tests can't be static</Note>
+    <Note Id="2" Modified="2009-10-17 08:39:24Z">Unit tests can't be static</Note>
+    <Note Id="6" Modified="2009-10-17 08:40:31Z">Is called by testing framework</Note>
+    <Note Id="9" Modified="2009-10-17 08:40:37Z">Required by NCover</Note>
+    <Note Id="10" Modified="2009-10-17 08:40:49Z">Intentionally for better type safety</Note>
+    <Note Id="11" Modified="2009-10-17 08:41:00Z">Using Expression API</Note>
+    <Note Id="12" Modified="2009-10-17 08:41:46Z">Correct spelling</Note>
+    <Note Id="13" Modified="2009-10-17 08:42:21Z">That's the name of the class!</Note>
+    <Note Id="14" Modified="2009-10-17 08:42:36Z">Can be ignored, used by mocking framework</Note>
    </User>
   </Notes>
   <Rules>
@@ -311,6 +510,9 @@
    </Rule>
    <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
     <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+    <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
    </Rule>
    <Rule TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011">
     <Resolution Name="Default">Consider changing the type of parameter {0} in {1} from {2} to its base type {3}. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Resolution>
@@ -321,8 +523,14 @@
    <Rule TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006">
     <Resolution Name="Default">Consider a design where {0} doesn't nest generic type {1}.</Resolution>
    </Rule>
+   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+    <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   </Rule>
    <Rule TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711">
     <Resolution Name="MemberNewerVersion">Either replace the suffix '{0}' in member name {1} with the suggested numeric alternate '2' or provide a more meaningful suffix that distinguishes it from the member it replaces.</Resolution>
+   </Rule>
+   <Rule TypeName="InstantiateArgumentExceptionsCorrectly" Category="Microsoft.Usage" CheckId="CA2208">
+    <Resolution Name="IncorrectParameterName">Method {0} passes '{1}' as the {2} argument to a {3} constructor. Replace this argument with one of the method's parameter names. Note that the provided parameter name should have the exact casing as declared on the method.</Resolution>
    </Rule>
    <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
     <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>

@@ -1,14 +1,15 @@
 #region Copyright © 2009 Andre Loker (mail@andreloker.de). All rights reserved.
+
 // $Id$
 #endregion
 
+using System;
+using MarkupPreview.Processing;
+using NUnit.Framework;
+using Rhino.Mocks;
+
 namespace MarkupPreview.Controllers.HomeControllerTests
 {
-  using System;
-  using NUnit.Framework;
-  using Processing;
-  using Rhino.Mocks;
-
   [TestFixture]
   public class WhenProvidingInvalidMarkupType : ControllerTest<HomeController>
   {
@@ -16,7 +17,8 @@ namespace MarkupPreview.Controllers.HomeControllerTests
     {
       base.Setup();
       Controller.ProcessorFactory = MockRepository.GenerateStub<IMarkupProcessorFactory>();
-      Controller.ProcessorFactory.Stub(x => x.GetProcessor(Arg<MarkupType>.Is.Anything)).Throw(new ArgumentOutOfRangeException());
+      Controller.ProcessorFactory.Stub(x => x.GetProcessor(Arg<MarkupType>.Is.Anything)).Throw(
+        new ArgumentOutOfRangeException("markupType"));
     }
 
     [Test]
