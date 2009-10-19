@@ -73,3 +73,12 @@ a:hover
   font-family:Consolas, "Courier New", Courier, Monospace;
   font-size:9pt;  
 }
+
+#info
+{
+  margin: 0.5em 1em 0 1em;
+  padding: 1em;
+  border: dashed 1px #ccc;
+  background-color: #fffff8;
+  color: #555;
+}

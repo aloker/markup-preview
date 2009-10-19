@@ -1,3 +1,8 @@
+<p id="info">
+<strong>Instructions:</strong> 
+Select the type of markup using the drop down box on the left side, then enter markup text into the left pane. 
+The right pane will be automatically refreshed with your markup converted to HTML.
+</p>
 <div id="left" class="container">
   <h2>Markup ${FormHelper.Select("type", markupTypes)}</h2>
   <div class="inner">${FormHelper.TextArea("source", {@rows:20, @cols: 60})}</div>
